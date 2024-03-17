@@ -4,6 +4,7 @@
     border-radius: 8px;
     margin: 20px auto;
     max-width: 800px;
+    box-sizing: border-box;
 }
 
 .bio h1 {
@@ -21,7 +22,7 @@
 }
 
 .nav-btn {
-    display: inline-block;
+    display: block;
     background-color: #3498db;
     color: white;
     padding: 10px 20px;
@@ -30,8 +31,59 @@
     cursor: pointer;
     text-decoration: none;
     margin-top: 20px;
+    width: 100%;
 }
 
 .nav-btn:hover {
     background-color: #2980b9;
+}
+
+.bio-image {
+    width: 175px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .bio {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .bio h1 {
+        font-size: 24px; /* Smaller text on small devices */
+    }
+
+    .bio p {
+        font-size: 14px; /* Smaller text on small devices */
+    }
+
+    .bio-image {
+        width: 150px; /* Smaller image on small devices */
+    }
+
+    .nav-btn {
+        padding: 8px 15px; /* Smaller padding on small devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .bio {
+        padding: 10px;
+    }
+
+    .bio h1 {
+        font-size: 20px; /* Even smaller text for very small devices */
+    }
+
+    .bio-image {
+        width: 120px; /* Even smaller image for very small devices */
+    }
+
+    .nav-btn {
+        padding: 6px 10px; /* Even smaller padding for very small devices */
+    }
 }

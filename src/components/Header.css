@@ -26,3 +26,46 @@
     text-decoration: underline;
     font-weight: 400;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 5px;
+    }
+
+    .header h1 {
+        font-size: 20px; /* Smaller font size for header on smaller devices */
+    }
+
+    .nav-link {
+        margin: 0 5px; /* Less margin for navigation links on smaller devices */
+        font-size: 14px; /* Smaller font size for navigation links */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 5px 2px;
+    }
+
+    .header h1 {
+        font-size: 18px; /* Even smaller font size for very small devices */
+    }
+
+    .nav-link {
+        margin: 0 3px; /* Even less margin for navigation links */
+        font-size: 12px; /* Even smaller font size for navigation links */
+    }
+
+    /* Stack navigation links vertically for very small devices */
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        display: block; /* Each link takes full width of the container */
+        margin: 5px 0; /* Add vertical margin */
+    }
+}

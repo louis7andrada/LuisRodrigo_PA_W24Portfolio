@@ -5,6 +5,7 @@
     border-radius: 8px;
     margin: 20px auto;
     max-width: 800px;
+    box-sizing: border-box;
 }
 
 .cover-letter h2 {
@@ -14,11 +15,11 @@
 
 .cover-letter address {
     margin-bottom: 20px;
-    white-space: pre-wrap; /* respects new lines and spaces */
+    white-space: pre-wrap;
 }
 
 .cover-letter pre {
-    white-space: pre-wrap; /* respects new lines and spaces */
+    white-space: pre-wrap;
     color: #555;
     font-family: 'Open Sans', sans-serif;
 }
@@ -34,8 +35,48 @@
     border-radius: 4px;
     cursor: pointer;
     margin-top: 20px;
+    width: auto;
 }
 
 .nav-btn:hover {
     background-color: #357abd;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .cover-letter {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .cover-letter h2 {
+        font-size: 18px; /* Smaller font size on smaller devices */
+    }
+
+    .cover-letter pre {
+        font-size: 14px; /* Smaller font size for text in pre on smaller devices */
+    }
+
+    .nav-btn {
+        padding: 8px 16px; /* Smaller padding on smaller devices */
+        width: 100%; /* Full-width button on smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .cover-letter {
+        padding: 10px;
+    }
+
+    .cover-letter h2 {
+        font-size: 16px; /* Even smaller font size for very small devices */
+    }
+
+    .cover-letter pre {
+        font-size: 12px; /* Even smaller font size for text in pre on very small devices */
+    }
+
+    .nav-btn {
+        padding: 6px 12px; /* Even smaller padding for very small devices */
+    }
 }

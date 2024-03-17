@@ -3,7 +3,7 @@ import './Resume.css';
 import { useNavigate } from 'react-router-dom';
 
 function Resume() {
-    const navigate = useNavigate(); // Use the useNavigate hook for navigation
+    const navigate = useNavigate();
 
     const resumeSections = [
         {

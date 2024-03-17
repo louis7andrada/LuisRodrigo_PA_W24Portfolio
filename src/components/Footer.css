@@ -3,6 +3,7 @@
     background-color: #333;
     color: white;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .footer a {
@@ -17,4 +18,26 @@
 .footer-content {
     margin: auto;
     max-width: 800px;
+    padding: 0 10px
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 10px; /* Slightly reduce padding for smaller devices */
+    }
+
+    .footer-content {
+        padding: 0 5px; /* Reduce horizontal padding on smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px 5px; /* Further reduce padding for very small devices */
+    }
+
+    .footer-content {
+        padding: 0 2px; /* Minimal horizontal padding on very small devices */
+    }
 }

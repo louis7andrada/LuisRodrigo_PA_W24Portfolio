@@ -14,7 +14,7 @@ function Header() {
                 <Link className="nav-link" to="/academic-credentials">Academic Credentials</Link>
                 <Link className="nav-link" to="/academic-work">Academic Work</Link>
                 <Link className="nav-link" to="/professional-summary">Professional Summary</Link>
-                {/* Add additional navigation links as needed */}
+                <Link className="nav-link" to="/statement-of-career-goal">Statement of Career Goal</Link>
             </nav>
         </header>
     );

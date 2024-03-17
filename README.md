@@ -1,4 +1,4 @@
-# COMP BLABLA - 
+# COMP 3078 - Portfolio Development
 
 Student: Luis Rodrigo Procopio Andrada\
 Student id: 101356043

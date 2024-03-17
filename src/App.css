@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
 }
 
@@ -20,7 +20,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
@@ -34,5 +33,32 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Responsive font size adjustments */
+.App-header {
+  font-size: calc(8px + 2vmin);
+}
+
+/* Larger devices specific styles */
+@media (min-width: 768px) {
+  .App-header {
+    font-size: calc(10px + 2vmin);
+  }
+
+  .App-logo {
+    height: 40vmin;
+  }
+}
+
+/* Very small devices specific styles */
+@media (max-width: 480px) {
+  .App-header {
+    font-size: calc(6px + 2vmin);
+  }
+
+  .App-logo {
+    height: 30vmin;
   }
 }

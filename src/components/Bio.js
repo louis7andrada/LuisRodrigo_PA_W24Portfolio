@@ -2,6 +2,8 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Bio.css';
 
+import profilePicture from '../images/IMG_8777.jpeg'; //
+
 function Bio() {
     const bioData = {
         name: "Louis Andrada",
@@ -14,11 +16,11 @@ function Bio() {
 
     return (
         <section className="bio">
+            <img src={profilePicture} alt="Louis Andrada" className="bio-image" />
             <h1>{bioData.name}</h1>
             <p><strong>Location:</strong> {bioData.location}</p>
             <p>{bioData.bio}</p>
             <p><strong>Interests:</strong> {bioData.interests}</p>
-            <button className="nav-btn" onClick={() => navigate('/')}>Back to Home page</button>
         </section>
     );
 }

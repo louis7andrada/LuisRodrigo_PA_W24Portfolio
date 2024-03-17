@@ -5,6 +5,7 @@
     border-radius: 8px;
     margin: 20px auto;
     max-width: 800px;
+    box-sizing: border-box;
 }
 
 .statement-of-career-goal h1 {
@@ -27,8 +28,48 @@
     cursor: pointer;
     text-decoration: none;
     margin-top: 20px;
+    width: auto;
 }
 
 .nav-btn:hover {
     background-color: #357abd;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .statement-of-career-goal {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .statement-of-career-goal h1 {
+        font-size: 18px; /* Smaller font size on smaller devices */
+    }
+
+    .statement-of-career-goal p {
+        font-size: 14px; /* Smaller font size for text on smaller devices */
+    }
+
+    .nav-btn {
+        padding: 8px 16px; /* Smaller padding on smaller devices */
+        width: 100%; /* Full-width button on smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .statement-of-career-goal {
+        padding: 10px;
+    }
+
+    .statement-of-career-goal h1 {
+        font-size: 16px; /* Even smaller font size for very small devices */
+    }
+
+    .statement-of-career-goal p {
+        font-size: 12px; /* Even smaller font size for text on very small devices */
+    }
+
+    .nav-btn {
+        padding: 6px 12px; /* Even smaller padding for very small devices */
+    }
 }
