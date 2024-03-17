@@ -1,0 +1,37 @@
+.bio {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.bio h1 {
+    color: #2c3e50;
+    margin: 0 0 20px 0;
+}
+
+.bio p {
+    color: #34495e;
+    line-height: 1.6;
+}
+
+.bio p strong {
+    color: #2c3e50;
+}
+
+.nav-btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.nav-btn:hover {
+    background-color: #2980b9;
+}

@@ -1,0 +1,34 @@
+.statement-of-career-goal {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.statement-of-career-goal h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.statement-of-career-goal p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.nav-btn {
+    display: block;
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.nav-btn:hover {
+    background-color: #357abd;
+}
